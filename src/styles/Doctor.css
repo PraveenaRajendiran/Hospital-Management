@@ -1,0 +1,24 @@
+.doctor-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-card:hover {
+  transform: scale(1.03);
+}
+
+.doctor-image-container {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 10px;
+}
+
+.doctor-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}

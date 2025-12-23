@@ -1,0 +1,60 @@
+/* Faq.css */
+
+.faq-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-title {
+  text-align: center;
+  color: #d63384;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.accordion-body {
+  padding: 20px;
+  text-align: left;
+  background-color: #fefefe;
+  border: 3px solid #33022f;
+  margin-top: 10px;
+  border-radius: 6px;
+  color: #d5006d;
+  font-size: 16px;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,55 @@
+.doctor-profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+  
+  .section-box {
+    margin-top: 20px;
+  }
+  
+  .section-box h3 {
+    color: #d5006d;
+    margin-bottom: 10px;
+  }
+  
+  /* Task section styles */
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .task-input button {
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  
+  ul li.done {
+    text-decoration: line-through;
+    color: #888;
+  }
+  

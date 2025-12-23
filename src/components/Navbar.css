@@ -1,0 +1,240 @@
+/* Navbar Container */
+.navbar-container {
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.logo-image {
+  width: 70%;
+  height: 50%;
+  margin: 0 20px;
+}
+
+/* Top Navbar Styles */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Ash color */
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Custom Button */
+.mybutton {
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mybutton:hover,
+.mybutton:active {
+  background-color: #d5006d;
+  border-color: #d5006d;
+  color: white;
+}
+
+.mybutton:focus {
+  outline: none;
+}
+
+/* Danger Button */
+.btn-danger {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #f44336;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  width: 160px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Bottom Navbar */
+.bottom-navbar {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bottom-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #0a8d2b;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bottom-link:hover {
+  color: #a5044f;
+}
+
+/* Menu Toggle - right aligned for mobile */
+.menu-toggle-container {
+  display: none;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  background-color:white;
+  color: black;
+  border: box;
+  font-size: 25px; /* Increased size */
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 24px; /* Slightly larger padding */
+}
+.username {
+  color: #f77b99;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Emergency Dropdown Custom Styling */
+.emergency-dropdown {
+  max-height: 300px;
+  overflow-y: auto;
+  width: 280px;
+  border: 2px solid #a5044f;
+  padding: 0;
+}
+
+.emergency-dropdown .dropdown-item {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #f3d6d6;
+  color: #a5044f; /* dark pink */
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.emergency-dropdown .dropdown-item:hover {
+  background-color: #fff0f0;
+  color: #a5044f; /* stay dark pink on hover */
+}
+
+.emergency-dropdown .dropdown-item span {
+  color: #000;
+  float: right;
+  font-weight: normal;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .bottom-navbar {
+    display: none;
+  }
+
+  .bottom-navbar.show {
+    display: block;
+  }
+
+  .bottom-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-toggle-container {
+    display: flex;
+  }
+}
